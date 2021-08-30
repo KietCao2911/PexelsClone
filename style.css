@@ -1,0 +1,164 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+a{
+	color: white;
+}
+ul{
+	list-style: none;
+}
+input{
+	width: 100%;
+	outline: none;
+	border: none;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: crimson;
+}
+.size-content{
+	width: 95%;
+	margin: 0 auto;
+}
+.nav__container{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.logo{
+	width: 6%;
+}
+/*icon*/
+.icon{
+	font-size: 25px;
+	font-weight: bolder;
+}
+.menu-icon{
+	display: none;
+}
+.search-group{
+	width: 50%;
+	display: flex;
+	position: relative;
+}
+.search-group input{
+	height: 40px;
+	padding: 10px;
+	border-radius: 2px;
+}
+.icon-search{
+position: absolute;
+top: 60%;
+right: 10px;
+transform: translateY(-50%);
+}
+.list__nav{
+	width: 34%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.btn{
+	width: 100px;
+	height: 40px;
+	background-color: orange;
+	line-height: 40px;
+	text-align: center;
+}
+.list__nav li:not(:last-child){
+	margin-right:  10px;
+}
+.list__nav__mb{
+	position: absolute;
+	top: 100%;
+	background-color: #232a34;
+	left: 0;
+	right: 0;
+	font-size: 22px;
+	display: none;
+}
+
+.list__nav__mb ul{
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 30px 0;
+	color: white;
+	border-bottom: 1px solid white;
+}
+.list__nav__mb ul li{
+	margin: 5px 0;
+}
+.list__nav__mb .group-social-icon{
+
+	display: flex;
+	justify-content: center;
+	border-bottom: none;
+}
+.list__nav__mb .group-social-icon li{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.list__nav__mb .group-social-icon li a{
+	font-size: 25px;
+}
+ input[type='checkbox']{
+		display: none;
+	}
+
+@media (max-device-width: 768px)
+{	
+
+	#checked:checked ~ label ~.list__nav__mb{
+		display: block;
+		height: 100vh;
+	}
+	.size-content{
+		max-width: 95%;
+	}
+	.list__nav{
+		display: none;
+	}
+	.menu-icon{
+		color: white;
+
+		display: block;
+	}
+	.search-group{
+		display: none;
+	}
+	
+}
+
+@media (max-device-width: 450px){
+
+	#checked:checked ~ label ~.list__nav__mb{
+		display: block;
+		height: auto;
+	}
+	
+		.size-content{
+		max-width: 95%;
+	}
+	.list__nav{
+		display: none;
+	}
+	.menu-icon{
+		color: white;
+
+		display: block;
+	}
+	.search-group{
+		display: none;
+	}
+}
